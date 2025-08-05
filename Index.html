@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOV Bible Group Study - August 2025</title>
+    <style>
+        :root {
+            --lavender: #E6E6FA;
+            --amaranth: #E52B50;
+            --coquelicot: #FF3800;
+            --eburnean: #FFFBF2;
+            --fulvous: #E58428;
+            --glaucous: #6082B6;
+            --smalt: #003399;
+            --sarcoline: #FFDDAF;
+            --wenge: #645452;
+            --zaffre: #0014A8;
+            --purple: #800080;
+            --orange: #FFA500;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--lavender);
+            color: var(--wenge);
+        }
+
+        header {
+            background-color: var(--purple);
+            color: var(--eburnean);
+            text-align: center;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background-color: var(--eburnean);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: var(--orange);
+            border-bottom: 2px solid var(--orange);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .verse-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .verse-list li {
+            background-color: var(--sarcoline);
+            border-left: 5px solid var(--fulvous);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .member-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .member-list li {
+            background-color: var(--amaranth);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .member-list li:hover {
+            background-color: var(--glaucous);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: var(--sarcoline);
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .close-button {
+            color: var(--wenge);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--zaffre);
+            margin-top: 20px;
+        }
+        
+        .icons {
+            font-size: 2rem;
+            color: var(--eburnean);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="icons">✝️</span>
+        <h1>FOV Bible Group Study</h1>
+        <span class="icons">🛐</span>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <h3 class="section-title">Theme for August: Kings and Prophets</h3>
+            <p><strong>Key Passages:</strong> 2 Samuel 7 (David’s Covenant), 1 Kings 3 and 11 (Solomon’s Wisdom), 1 Kings 17–19 (Elijah’s Faith), 2 Kings 2, 4 (Elisha’s Miracles)</p>
+            <p><strong>Memory Verse:</strong> Psalm 51:10 – "Create in me a pure heart, O God, and renew a steadfast spirit within me."</p>
+            <p><strong>Theme Focus:</strong> This month, we delve into the lives of the kings and prophets of Israel, exploring the profound themes of Obedience, Repentance, and God’s Justice as they are revealed through their stories. We will see how God uses both the faithful and the flawed to accomplish His purposes.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Lessons Learnt from Key Passages</h3>
+            <ul>
+                <li><strong>The Enduring Covenant (2 Samuel 7):</strong> God’s promises are eternal and not based on our performance. David's desire to build a house for God was met with a greater promise—that God would build an everlasting house (a dynasty) for David. This points to the ultimate King, Jesus Christ, who fulfills this covenant.</li>
+                <li><strong>Wisdom and Its Pitfalls (1 Kings 3 & 11):</strong> Solomon’s story is a powerful reminder that wisdom from God is a precious gift, but it must be guarded with obedience. Though he started with a pure heart and a request for wisdom to govern God's people, his later disobedience led to the kingdom's division. True wisdom is not just knowledge, but living in a way that honors God.</li>
+                <li><strong>Faith in the Face of Despair (1 Kings 17–19):</strong> The life of Elijah teaches us that God provides for His servants in miraculous ways (the raven, the widow), and He reveals His power in dramatic fashion (Mount Carmel). But it also shows us that even the most zealous prophets can experience deep despair and doubt. God's response to Elijah in the "still small voice" shows His compassion and presence even in our lowest moments.</li>
+                <li><strong>The Mantle of Ministry (2 Kings 2 & 4):</strong> The transfer of Elisha's mantle from Elijah highlights the passing on of spiritual authority and the continuity of God’s work. Elisha’s miracles, such as the healing of the water and the resurrection of the Shunammite's son, demonstrate God's power working through His servants to bring life and restoration.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">10 Key Bible Verses</h3>
+            <ul class="verse-list">
+                <li><strong>2 Samuel 7:16</strong> – "Your house and your kingdom will endure forever before me; your throne will be established forever."</li>
+                <li><strong>1 Kings 3:9</strong> – "So give your servant a discerning heart to govern your people and to distinguish between right and wrong."</li>
+                <li><strong>1 Kings 11:4</strong> – "As Solomon grew old, his wives turned his heart after other gods, and his heart was not fully devoted to the Lord his God."</li>
+                <li><strong>1 Kings 17:16</strong> – "For the jar of flour was not used up and the jug of oil did not run dry, in keeping with the word of the Lord spoken by Elijah."</li>
+                <li><strong>1 Kings 18:39</strong> – "When all the people saw this, they fell prostrate and cried, 'The Lord—he is God! The Lord—he is God!'"</li>
+                <li><strong>1 Kings 19:12</strong> – "And after the earthquake came a fire, but the Lord was not in the fire. And after the fire came a gentle whisper."</li>
+                <li><strong>2 Kings 2:9</strong> – "When they had crossed, Elijah said to Elisha, 'Tell me, what can I do for you before I am taken from you?' 'Let me inherit a double portion of your spirit,' Elisha replied."</li>
+                <li><strong>2 Kings 4:41</strong> – "But Elisha said, 'Get some flour.' He threw it into the pot and said, 'Serve it to the people to eat.' And there was nothing harmful in the pot."</li>
+                <li><strong>Proverbs 16:18</strong> – "Pride goes before destruction, a haughty spirit before a fall." (Related to Solomon)</li>
+                <li><strong>James 5:16</strong> – "The prayer of a righteous person is powerful and effective." (Related to Elijah and Elisha)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Sermons/Teachings Derived from the Passages</h3>
+            <p><strong>1. The Heart of God’s Covenant: The Promise and Its Fulfillment (2 Samuel 7)</strong></p>
+            <p>In this passage, we witness King David's humble desire to build a permanent temple for the Lord. However, God responds with an even grander plan—He promises to build a lasting dynasty for David. This teaching focuses on the nature of God's covenant: it is not based on our works or desires, but on His eternal purpose. We will explore how this promise of an everlasting kingdom finds its ultimate fulfillment in Jesus Christ, the Son of David. The sermon will encourage us to trust in God's faithfulness and to see our own plans and efforts as secondary to His perfect will, reminding us that God's promises are far more magnificent than anything we could ever imagine or build for Him.</p>
+            <p><strong>2. The Duality of Wisdom: A Gift and a Test (1 Kings 3 & 11)</strong></p>
+            <p>Solomon’s life is a profound case study in the power and peril of wisdom. We begin with the powerful story of a young king who humbly asks God for wisdom to lead His people, and God blesses him with unmatched understanding. This is a teaching on the true source of wisdom and the importance of a pure heart. However, we then turn to the tragedy of his later years, where his heart was turned away by foreign wives and false gods. This sermon will challenge us to recognize that wisdom is not just intellectual knowledge but a way of life rooted in obedience to God. We must constantly guard our hearts, for even the wisest among us can fall into the trap of compromise and idolatry.</p>
+            <p><strong>3. Finding God in the Quiet: The Voice After the Storm (1 Kings 17–19)</strong></p>
+            <p>Elijah's journey is a dramatic narrative of faith and despair. We first see him boldly confronting the prophets of Baal on Mount Carmel, a moment of spectacular divine power. Yet, a short time later, he is found in a cave, running for his life and consumed by fear. This teaching delves into the reality that even the most dedicated followers of God can experience deep-seated anxiety and doubt. God's response to Elijah is not in the fire, wind, or earthquake, but in a gentle whisper. This sermon will help us understand that God is not just in the big, miraculous moments, but He often speaks most tenderly and intimately to us in our quietest and most broken moments, offering comfort, purpose, and a renewed mission.</p>
+            <p><strong>4. The Power of a Legacy: Carrying the Mantle of Faith (2 Kings 2 & 4)</strong></p>
+            <p>The relationship between Elijah and his successor, Elisha, is a powerful illustration of spiritual mentorship and the passing on of faith. Elisha's request for a "double portion" of Elijah’s spirit signifies not a desire for more power, but a longing to carry on the prophetic legacy with the same passion and anointing. This teaching will explore the significance of spiritual inheritance and the call to mentor the next generation. We will also examine Elisha's miracles—from the healing of the water to the resurrection of the Shunammite's son—to see that God's power continues to work through His chosen vessels, bringing life, healing, and restoration. We are all called to be part of this continuing story of faith.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Group Members</h3>
+            <ul class="member-list">
+                <li onclick="showModal('Kamau Kabage')">Kamau Kabage</li>
+                <li onclick="showModal('Victor Amani')">Victor Amani</li>
+                <li onclick="showModal('Zoe Wanjiru')">Zoe Wanjiru</li>
+                <li onclick="showModal('Mwakio Ronnie')">Mwakio Ronnie</li>
+                <li onclick="showModal('Karoki Wade')">Karoki Wade</li>
+                <li onclick="showModal('Msafiri')">Msafiri</li>
+                <li onclick="showModal('Miriam ndiwa')">Miriam ndiwa</li>
+                <li onclick="showModal('Namada Mwakio')">Namada Mwakio</li>
+                <li onclick="showModal('Divine Mugisha')">Divine Mugisha</li>
+                <li onclick="showModal('Fortune wetungu')">Fortune wetungu</li>
+                <li onclick="showModal('Roni Karoki')">Roni Karoki</li>
+                <li onclick="showModal('Marvel Grace')">Marvel Grace</li>
+                <li onclick="showModal('Dalton Mwakio')">Dalton Mwakio</li>
+                <li onclick="showModal('Edith Peter')">Edith Peter</li>
+                <li onclick="showModal('Mary Njeri')">Mary Njeri</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p>Thank you for joining us, kindly comply and read and make notes on what you are learning, may Jesus bless you.</p>
+            <p>
+                For further inquiries, contact us at:<br>
+                <strong>Phone:</strong> <a href="tel:+254796646897">+254796646897</a><br>
+                <strong>Email:</strong> <a href="mailto:stephen.kabagee@gmail.com">stephen.kabagee@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created with <span style="color: var(--amaranth);">❤️</span> for FOV Bible Group Study</p>
+    </div>
+
+    <script>
+        function showModal(name) {
+            document.getElementById('myModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Close the modal when the user clicks anywhere outside of the modal content
+        window.onclick = function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
